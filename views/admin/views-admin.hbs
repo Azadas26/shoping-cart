@@ -1,0 +1,39 @@
+
+<div style="text-align: center; color: rgb(144, 0, 255); padding-top: 5em;">
+
+    <h1 style=" text-shadow: -1px -3px 13px #3c3838;"> <b>A</b>dd products</h1>
+
+    </div>
+
+
+<section class="mt-4">
+  <div>   <a href="/admin/add-products" class="btn btn-success float-right mr-5 ">Add Products</a> </div>
+
+   <table class="table" style="color: black;">
+  <thead>
+    <tr>
+      <th scope="col">Number</th>
+      <th scope="col">Name</th>
+      <th scope="col">Catagory</th>
+      <th scope="col">Discription</th>
+      <th scope="col">Image</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each products}}
+    <tr>
+      <th scope="row">{{@index}}</th>
+      <td>{{this.name}}</td>
+      <td>{{this.category}}</td>
+      <td>{{this.discription}}</td>
+      <td><img src="{{this.image}}" alt="" style="width: 70px; height: 80px;"></td>
+    </tr>
+   {{/each}}
+  </tbody>
+</table>
+       
+ 
+    
+ 
+
+</section>

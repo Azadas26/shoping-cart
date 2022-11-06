@@ -16,18 +16,21 @@
 
 <body>
 
+  
+{{#if admin}}
+
+{{>admin}}
+
+{{else}}
+
+{{>user}}
 
 
+{{/if}}
 
  
 
-  {{>admin}}
-
-
-
-  <div style="text-align: center; color: rgb(144, 0, 255);" class="pt-4">
-
-    <h1 style=" text-shadow: -1px -3px 13px #3c3838;"> <b>S</b>elect To Shope......</h1>
+  
 
 
 
